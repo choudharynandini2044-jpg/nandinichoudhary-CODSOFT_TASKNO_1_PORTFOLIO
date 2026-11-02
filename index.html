@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of a B.Tech Computer Science student - aspiring software engineer, CSE student, and web developer." />
+  <title>My Portfolio</title>
+
+  <!-- Google Fonts (sensible fallbacks are set in CSS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============================== NAVIGATION ============================== -->
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-mark">P</span>
+        <span class="logo-text">Portfolio</span>
+      </a>
+
+      <!-- Hamburger button (mobile) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <!-- EDITABLE: Change your name below -->
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-name">Nandini choudhary </h1>
+          <!-- EDITABLE: Change your tagline below -->
+          <p class="tagline">Aspiring Software Engineer | CSE Student | Web Developer</p>
+          <p class="hero-intro">
+            I am a B.Tech Computer Science student passionate about building clean, user-friendly
+            web applications and strengthening my foundation in programming, data structures,
+            and algorithms.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <!-- EDITABLE: Point this to your resume file (resume.pdf) once added -->
+            <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <!-- EDITABLE: Replace the src with your profile photo path -->
+          <div class="profile-frame">
+            <img src="./photo/profile.jpeg" alt="Profile photo of Your Name" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="profile-placeholder" aria-hidden="true">
+              <span>YN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A little about who I am and what I do.</p>
+
+        <div class="about-grid">
+          <div class="about-image">
+            <!-- EDITABLE: Replace the src with your photo -->
+            <img src="about.jpg" alt="About photo of Your Name" class="about-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="about-placeholder" aria-hidden="true">About Photo</div>
+          </div>
+          <div class="about-text">
+            <h3>B.Tech Computer Science Student</h3>
+            <p>
+              I am currently pursuing a B.Tech in Computer Science and Engineering. I enjoy
+              learning how software works under the hood and turning ideas into working products.
+              My current focus is on strengthening my programming fundamentals, mastering data
+              structures and algorithms, and building responsive, accessible web interfaces.
+            </p>
+            <p>
+              When I am not coding, I like exploring new technologies, solving algorithmic
+              problems, and collaborating on small projects that help me grow as a developer.
+            </p>
+            <ul class="about-list">
+              <li><strong>Name:</strong> Your Name</li>
+              <!-- EDITABLE: Update your email -->
+              <li><strong>Email:</strong> your.email@example.com</li>
+              <!-- EDITABLE: Update your location -->
+              <li><strong>Location:</strong> Your City, Your Country</li>
+              <li><strong>Education:</strong> B.Tech in Computer Science &amp; Engineering</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SKILLS ============================== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technologies and concepts I work with.</p>
+
+        <!-- Skill levels are editable here (data-level) and in script.js -->
+        <div class="skills-grid" id="skillsGrid">
+          <article class="skill-card" data-level="85">
+            <div class="skill-head">
+              <h3>HTML</h3>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="progress"><div class="progress-bar"></div></div>
+          </article>
+
+          <article class="skill-card" data-level="80">
+            <div class="skill-head">
+              <h3>CSS</h3>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="progress"><div class="progress-bar"></div></div>
+          </article>
+
+          <article class="skill-card" data-level="70">
+            <div class="skill-head">
+              <h3>JavaScript</h3>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="progress"><div class="progress-bar"></div></div>
+          </article>
+
+          <article class="skill-card" data-level="75">
+            <div class="skill-head">
+              <h3>C</h3>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="progress"><div class="progress-bar"></div></div>
+          </article>
+
+          <article class="skill-card" data-level="70">
+            <div class="skill-head">
+              <h3>C++</h3>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="progress"><div class="progress-bar"></div></div>
+          </article>
+
+          <article class="skill-card" data-level="65">
+            <div class="skill-head">
+              <h3>Data Structures &amp; Algorithms</h3>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="progress"><div class="progress-bar"></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROJECTS ============================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Some of the things I have built.</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-thumb thumb-1" aria-hidden="true">
+              <span>Portfolio</span>
+            </div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                A responsive personal portfolio built with semantic HTML, modern CSS, and
+                vanilla JavaScript. Showcases skills, projects, and contact information.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <a href="#home" class="btn btn-outline btn-sm">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb thumb-2" aria-hidden="true">
+              <span>Landing</span>
+            </div>
+            <div class="project-body">
+              <h3>Landing Page</h3>
+              <p>
+                A clean, modern landing page with a hero section, feature highlights, and a
+                call-to-action. Designed for responsiveness across devices.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Flexbox</span>
+              </div>
+              <a href="#home" class="btn btn-outline btn-sm">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb thumb-3" aria-hidden="true">
+              <span>Calc</span>
+            </div>
+            <div class="project-body">
+              <h3>Calculator</h3>
+              <p>
+                A functional calculator supporting basic arithmetic operations with a clean
+                interface and keyboard-friendly interactions.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <a href="#home" class="btn btn-outline btn-sm">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== RESUME ============================== -->
+    <section class="section resume" id="resume">
+      <div class="container resume-inner">
+        <div class="resume-text">
+          <h2 class="section-title">Resume</h2>
+          <p class="section-subtitle">A snapshot of my background and experience.</p>
+          <p>
+            My resume highlights my education, technical skills, and the projects I have
+            worked on so far. It is updated regularly as I learn and build more.
+          </p>
+          <p class="resume-note">
+            Place your resume file named <code>resume.pdf</code> in this project folder to
+            enable the download button. The button below downloads the local file when it
+            exists.
+          </p>
+          <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Let's connect and build something great.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get in touch</h3>
+            <p>
+              Feel free to reach out for collaborations, internship opportunities, or just a
+              friendly chat about technology.
+            </p>
+            <ul class="contact-list">
+              <!-- EDITABLE: Update your email -->
+              <li>
+                <span class="contact-icon" aria-hidden="true">&#9993;</span>
+                <a href="mailto:Nandinichoudhary@gmail.com">Nandinichoudhary@gmail.com</a>
+              </li>
+              <!-- EDITABLE: Update your GitHub URL -->
+              <li>
+                <span class="contact-icon" aria-hidden="true">&#128187;</span>
+                <a href="https://github.com/choudharynandini2044-jpg" target="_blank" rel="noopener noreferrer">github.com/choudharynandini2044-jpg</a>
+              </li>
+              <!-- EDITABLE: Update your LinkedIn URL -->
+              <li>
+                <span class="contact-icon" aria-hidden="true">&#128100;</span>
+                <a href="https://www.linkedin.com/in/nandini-choudhary-278668356?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </li>
+            </ul>
+            <p class="form-note">
+              Note: This contact form is frontend-only. To actually receive messages, connect
+              it to a backend or an email service such as Formspree or EmailJS.
+            </p>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <small class="error" id="nameError"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <small class="error" id="emailError"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+              <small class="error" id="messageError"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="success-msg" id="successMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <div class="footer-social">
+        <!-- EDITABLE: Update social links -->
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:your.email@example.com" aria-label="Email">Email</a>
+      </div>
+      <a href="#top" class="back-to-top" aria-label="Back to top">&#8679;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
